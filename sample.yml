@@ -3,20 +3,17 @@
   hosts: all
   name: "apply common configuration to all nodes"
   remote_user: root
-  project_code: XXX
   roles: 
     - common
 - 
   hosts: webservers
   name: "configure and deploy the webservers and application code"
   remote_user: root
-  project_code: XXX
   roles: 
     - web
 - 
   hosts: dbservers
   name: "deploy MySQL and configure the databases"
   remote_user: root
-  project_code: XXX
   roles: 
     - db
